@@ -1,0 +1,53 @@
+.Resenas{
+    margin:0;
+
+        div{
+        height:100px;
+        width: 100%;
+        padding:0px;
+        }
+
+    .opiniones{
+            height:200px;
+            width: 100%;
+            background-image: url("../Imagenes/opinando.jpg");
+            background-size: contain;
+            background-repeat: repeat;
+            margin-right:0%;
+            }
+
+    .comentarios{
+        height:500px;
+        width: 100%;
+        padding: $padding;
+        margin-bottom: 30px;
+        
+        
+        .boxOpinion{
+            width: 95%;
+            height: 35vh;
+            border-radius: 10px;
+            padding: 30px;;
+            background-color: white;
+            box-shadow: -13px 21px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -13px 21px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -13px 21px 5px 0px rgba(0,0,0,0.75);
+            .opinion{
+                background: #ccc;
+                background: linear-gradient(to right, $segundoColor ,$colorPrincipal);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                text-align:right; 
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                line-height: 55px;
+                list-style-type: none;
+            }
+
+        }
+             
+      
+
+    }        
+
+}

@@ -1,0 +1,314 @@
+.body_f .logoIndex h1 {
+  font-family: 'Lobster';
+  font-size: 40px;
+  font-weight: bold;
+  word-spacing: 20px;
+  text-align: center;
+  padding: 20px; }
+
+nav ul li, main .box1 .datos {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal; }
+
+main h2, .horariosClases h2 {
+  color: #bac3e4;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  word-spacing: 20px; }
+
+main h3, .horariosClases h3 {
+  color: black;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: 30px; }
+
+main .box1 .datos {
+  color: black;
+  text-align: left;
+  padding: 30px;
+  line-height: 30px;
+  margin: 10px;
+  border: 3px; }
+
+main .grid {
+  height: 1000px;
+  margin: 10px;
+  padding: 30px;
+  background-color: thistle;
+  grid-template-areas: "imagen1 imagen2 videoFla videoFla" "imagen4 imagen5 videoFla videoFla"; }
+
+main .grid .imagen1, main .grid .imagen2, main .grid .imagen3, main .grid .imagen4, main .grid .imagen5 {
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+.body_f {
+  background-image: linear-gradient(60deg, #1A7FAF, black);
+  margin: 0;
+  padding: 0;
+  position: relative; }
+  .body_f .logoIndex {
+    text-transform: uppercase; }
+    .body_f .logoIndex a:link {
+      text-decoration: none;
+      color: #1A7FAF; }
+    .body_f .logoIndex a:visited {
+      text-decoration: none;
+      color: #1A7FAF; }
+    .body_f .logoIndex a:hover {
+      text-decoration: none;
+      color: thistle; }
+    .body_f .logoIndex a:active {
+      text-decoration: none;
+      color: #1A7FAF; }
+
+nav {
+  display: inline;
+  text-align: center;
+  list-style: none; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 10vh; }
+    nav ul li #menuTop__submenu {
+      position: absolute;
+      display: none;
+      width: min-content;
+      height: min-content;
+      overflow: visible;
+      font-size: 10px;
+      text-align: left; }
+    nav ul li:link {
+      text-decoration: none;
+      color: #1A7FAF; }
+    nav ul li:visited {
+      text-decoration: none;
+      color: #1A7FAF; }
+    nav ul li:hover {
+      text-decoration: none;
+      color: thistle; }
+      nav ul li:hover #menuTop__submenu {
+        display: block; }
+    nav ul li:active {
+      text-decoration: none;
+      color: #1A7FAF; }
+    nav ul .menuTop__barraMenu a:link {
+      text-decoration: none;
+      color: #1A7FAF; }
+    nav ul .menuTop__barraMenu a:visited {
+      text-decoration: none;
+      color: #1A7FAF; }
+    nav ul .menuTop__barraMenu a:hover {
+      text-decoration: none;
+      color: thistle; }
+    nav ul .menuTop__barraMenu a:active {
+      text-decoration: none;
+      color: #1A7FAF; }
+
+main {
+  margin-top: 0px;
+  margin-bottom: 0; }
+  main .portada__guitar {
+    width: 100%;
+    animation: movimientoImagen 2s; }
+
+@keyframes movimientoImagen {
+  from {
+    margin-left: 100%;
+    width: 200%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+  main div {
+    height: 60vh;
+    padding: 20px; }
+  main .box1 {
+    width: 90%;
+    height: 55.55556vh;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 60px;
+    background-color: white;
+    box-shadow: 20px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 20px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 20px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+    main .box1 .datos {
+      margin: 10px; }
+  main #titulo {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px; }
+    main #titulo h2 {
+      text-align: left; }
+  main h2 {
+    padding: 30px; }
+  main h3 {
+    padding: 20px; }
+  main .grid {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 30vh 30vh 30vh 30vh;
+    grid-column-gap: 37.5px;
+    grid-row-gap: 250px; }
+    main .grid .imagen1 {
+      grid-area: imagen1;
+      background-image: url("../Imagenes/fla1.jpg"); }
+    main .grid .imagen2 {
+      grid-area: imagen2;
+      background-image: url("../Imagenes/fla2.jpg"); }
+    main .grid .imagen3 {
+      grid-area: imagen3;
+      background-image: url("../Imagenes/fla3.jpg"); }
+    main .grid .imagen4 {
+      grid-area: imagen4;
+      background-image: url("../Imagenes/fla4.jpg"); }
+    main .grid .imagen5 {
+      grid-area: imagen5;
+      background-image: url("../Imagenes/fla5.jpg"); }
+
+.horariosClases {
+  margin-top: 10px;
+  margin-bottom: 0;
+  background-image: url("../Imagenes/musica_fondo.jpg");
+  background-size: contain repeat;
+  background-color: #12277F; }
+  .horariosClases h2 {
+    padding: 30px; }
+  .horariosClases h3 {
+    padding: 20px; }
+  .horariosClases .tablaClases {
+    margin: 0 auto;
+    background-color: #20B3D8;
+    padding: 10px;
+    border-radius: 5px;
+    border-top: solid 5px black;
+    border-right: solid 5px blue;
+    border-bottom: solid 5px #3e064d;
+    border-left: solid 5px #aa3e74;
+    transition: all 4s; }
+    .horariosClases .tablaClases:hover {
+      width: 50vw;
+      height: 50vh; }
+    .horariosClases .tablaClases tr th {
+      background-color: #125171; }
+    .horariosClases .tablaClases tr td {
+      padding: 10px;
+      border: 2px solid black;
+      background-color: cornsilk;
+      text-align: center; }
+      .horariosClases .tablaClases tr td .ulClases {
+        list-style-type: none;
+        list-style-position: inside; }
+
+.Resenas {
+  margin: 0; }
+  .Resenas div {
+    height: 100px;
+    width: 100%;
+    padding: 0px; }
+  .Resenas .opiniones {
+    height: 200px;
+    width: 100%;
+    background-image: url("../Imagenes/opinando.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    margin-right: 0%; }
+  .Resenas .comentarios {
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px; }
+    .Resenas .comentarios .boxOpinion {
+      width: 95%;
+      height: 35vh;
+      border-radius: 10px;
+      padding: 30px;
+      background-color: white;
+      box-shadow: -13px 21px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: -13px 21px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -13px 21px 5px 0px rgba(0, 0, 0, 0.75); }
+      .Resenas .comentarios .boxOpinion .opinion {
+        background: #ccc;
+        background: linear-gradient(to right, black, #1A7FAF);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-align: right;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 55px;
+        list-style-type: none; }
+
+.ubic {
+  margin-top: 0px;
+  margin-bottom: 0; }
+  .ubic #map {
+    width: 100%;
+    height: 150vh;
+    margin-left: 30px;
+    margin-bottom: 30px; }
+    .ubic #map img {
+      width: 400px;
+      height: 530px;
+      margin-left: 500px; }
+
+.contacto_f {
+  width: 100%;
+  height: 800px;
+  margin-right: 0px; }
+  .contacto_f #contacto {
+    margin-left: 400px;
+    width: 400px;
+    height: 600px;
+    background-color: darkgrey;
+    width: 300px;
+    border: 3px solid black;
+    padding: 30px;
+    border-radius: 10px; }
+
+footer {
+  display: block;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0%; }
+  footer nav {
+    display: inline;
+    text-align: right; }
+    footer nav ul li {
+      display: inline;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      padding-right: 80px;
+      padding-left: 80px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    footer nav ul .barraPie__barraMenu a:link {
+      text-decoration: none;
+      color: #1A7FAF; }
+    footer nav ul .barraPie__barraMenu a:visited {
+      text-decoration: none;
+      color: #1A7FAF; }
+    footer nav ul .barraPie__barraMenu a:hover {
+      text-decoration: none;
+      color: thistle; }
+    footer nav ul .barraPie__barraMenu a:active {
+      text-decoration: none;
+      color: #1A7FAF; }

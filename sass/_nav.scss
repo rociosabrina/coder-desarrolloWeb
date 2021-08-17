@@ -1,0 +1,73 @@
+nav{
+    display: inline;
+    text-align: center;
+    list-style: none;
+    
+    ul{
+        @include flex(flex,row,space-evenly,flex-start);
+        height: $alto/10;
+
+        li {
+            @extend %fontStyle;
+              
+            #menuTop__submenu{
+                position:absolute;
+                display: none;
+                width:min-content;
+                height:min-content;
+                overflow:visible;
+                font-size: $tamLetraPpal/2;
+                text-align: left;
+            }
+              
+            &:link {
+                    text-decoration: none;
+                    color:$colorPrincipal;
+                    }
+            &:visited {
+                    text-decoration: none;
+                    color:$colorPrincipal;
+                    
+                    }
+            &:hover {
+                        text-decoration: none;
+                     color:$tercerColor;
+                     
+                     #menuTop__submenu {
+                        display: block;}
+                    
+                    }
+            &:active {
+                    text-decoration: none;
+                    color: $colorPrincipal;                 
+                    }
+         }  
+
+        
+    
+        .menuTop__barraMenu{
+            a:link {
+                text-decoration: none;
+                color:$colorPrincipal;
+                }
+        a:visited {
+                text-decoration: none;
+                color:$colorPrincipal;
+                
+                }
+        a:hover {
+                    text-decoration: none;
+                 color:$tercerColor;
+                
+                }
+        a:active {
+                text-decoration: none;
+                color: $colorPrincipal;                 
+                }
+        }
+        
+       
+
+    }
+
+}

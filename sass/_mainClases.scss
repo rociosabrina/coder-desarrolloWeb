@@ -1,0 +1,46 @@
+.horariosClases{
+    
+    margin-top:10px; margin-bottom:0;
+    background-image: url("../Imagenes/musica_fondo.jpg");
+    background-size: contain repeat;
+    background-color: #12277F;
+    
+
+    h2{
+        @extend %fontStyleH2;
+        padding: $padding*1.5;
+    }
+    h3{
+        @extend %fontStyleH3;
+        padding: $padding;
+    }
+
+        
+    .tablaClases{
+                margin:0 auto; background-color: #20B3D8; padding: 10px;
+                border-radius: 5px;
+                border-top: solid 5px black;
+                border-right: solid 5px blue;
+                border-bottom: solid 5px rgb(62, 6, 77);
+                border-left: solid 5px rgb(170, 62, 116);
+                transition: all 4s;
+          
+             &:hover{
+                width:50vw; height: 50vh;
+                    }
+
+            tr{
+                th{
+                    background-color:#125171;
+                }
+
+                td{
+                    padding: 10px; border: 2px solid black; background-color: cornsilk; text-align: center;
+                    .ulClases{
+                        list-style-type: none;
+                        list-style-position: inside;
+                             }
+                    }
+             }    
+             }    
+}    

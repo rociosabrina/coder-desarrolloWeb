@@ -1,0 +1,34 @@
+.body_f{    
+    background-image: linear-gradient(60deg,$colorPrincipal,$segundoColor );
+    margin:0; padding:0;
+    position:relative;
+    
+    .logoIndex { text-transform: uppercase; 
+    
+    h1{
+      @extend %fontStyleH1;       
+    }
+    
+a:link {
+    text-decoration: none;
+    color:$colorPrincipal;
+    }
+a:visited {
+    text-decoration: none;
+    color:$colorPrincipal;
+    
+    }
+a:hover {
+        text-decoration: none;
+     color:$tercerColor;
+    
+    }
+a:active {
+    text-decoration: none;
+    color:$colorPrincipal;
+    
+    }
+}
+
+
+}

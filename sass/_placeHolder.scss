@@ -1,0 +1,66 @@
+%fontStyleH1{
+    font-family: 'Lobster';
+    font-size: $tamLetraPpal*2;
+    font-weight: bold;
+    word-spacing: $wordSpac;
+    text-align: center;
+    padding:$padding;
+}
+
+%fontStyle{
+    font-size:$tamLetraPpal;
+    font-family:$letraPpal;
+    font-style: normal;
+}
+
+%fontStyleH2{
+    color:#bac3e4; text-align: center; 
+    font-family:$letraPpal;
+    font-size: $tamLetraPpal*1.5;
+    font-style: normal;
+    font-weight: bold;
+    word-spacing: $wordSpac;
+}
+
+%fontStyleH3{
+    
+    color:$segundoColor; text-align: left; 
+    font-family:$letraPpal;
+    font-size:$tamLetraPpal*1.25;
+    font-style: normal;
+    font-weight:lighter;
+    line-height: 30px;
+}
+
+%formatLi{
+    width:$ancho/2;  
+    position:relative;
+    display:inline-block;
+    padding-right: $padding*4; padding-left: $padding*4;
+    padding-top:$padding; padding-bottom:$padding;
+}
+
+%formatText{
+    color:$segundoColor; text-align: left;
+    padding: $padding*1.5;
+    line-height:30px ;
+    margin: $margin;
+    border: 3px ;
+}
+
+%formatGrid{
+    height: 1000px; 
+    margin: $margin;
+    padding: $padding*1.5;
+    background-color:$tercerColor;
+    grid-template-areas:
+    "imagen1 imagen2 videoFla videoFla"
+    "imagen4 imagen5 videoFla videoFla";
+}
+
+%imgGrid{
+    background-position: center;
+    background-size: cover;
+    padding: $padding;
+    border-radius: 10px;
+}

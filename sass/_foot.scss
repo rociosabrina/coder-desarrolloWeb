@@ -1,0 +1,42 @@
+footer{ 
+    display:block; background-color: $segundoColor; width:100%;position: fixed;bottom: 0%;
+
+    nav{
+        display:inline;
+        text-align: right;
+
+        ul{
+            li{
+                display:inline;
+                font-size:$tamLetraPpal;
+                font-family:$letraPpal;
+                padding-right: $padding*4; padding-left: $padding*4;
+                padding-top:$padding; padding-bottom:$padding;
+            }
+
+        
+    
+            .barraPie__barraMenu{
+                a:link {
+                    text-decoration: none;
+                    color:$colorPrincipal;
+                    }
+            a:visited {
+                    text-decoration: none;
+                    color:$colorPrincipal;
+                    
+                    }
+            a:hover {
+                        text-decoration: none;
+                     color:$tercerColor;
+                    
+                    }
+            a:active {
+                    text-decoration: none;
+                    color: $colorPrincipal;                 
+                    }
+            }    
+        }
+    }
+
+}

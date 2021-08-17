@@ -1,0 +1,102 @@
+main{
+    margin-top:0px; margin-bottom:0;
+    .portada__guitar{
+        width:100%; 
+        animation: movimientoImagen 2s
+        }
+
+        @keyframes movimientoImagen {
+            from {
+              margin-left:100%;
+              width:200%
+            }
+          
+            to {
+             margin-left:0%;
+             width:100%;
+           }    
+        }
+
+    div{
+        height:$alto*0.6;
+        padding:$padding;
+        }
+
+    .box1{
+        width: 90%;
+        height: $alto/1.8;
+        border-radius: 10px;
+        padding: 30px;;
+        margin-left: 60px;
+        background-color: white;
+        box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);    
+            .datos{
+                margin: 10px;
+                @extend %fontStyle;
+                @extend %formatText;
+            }
+          }    
+
+    #titulo{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin:10px;
+        h2{text-align: left;
+           }
+             
+    }   
+    
+    h2{
+        @extend %fontStyleH2;
+        padding: $padding*1.5;
+    }
+    h3{
+        @extend %fontStyleH3;
+        padding: $padding;
+    }
+
+    .grid{
+      
+        @include grid(grid, 25vw 25vw 25vw 25vw,30vh 30vh 30vh 30vh,$gap*0.75,$gap*5);
+        @extend %formatGrid;
+    
+    
+        .imagen1{
+            grid-area: imagen1;
+            background-image: url("../Imagenes/fla1.jpg");
+            @extend %imgGrid;
+            }    
+        
+        
+        .imagen2{
+            grid-area: imagen2;
+            background-image: url("../Imagenes/fla2.jpg");
+            @extend %imgGrid;
+        } 
+        
+        .imagen3{
+            grid-area: imagen3;
+            background-image: url("../Imagenes/fla3.jpg");
+            @extend %imgGrid;
+        } 
+        
+        .imagen4{
+            grid-area: imagen4;
+            background-image: url("../Imagenes/fla4.jpg");
+            @extend %imgGrid;
+        } 
+        
+        .imagen5{
+            grid-area: imagen5;
+            background-image: url("../Imagenes/fla5.jpg");
+            @extend %imgGrid;
+        } 
+
+        }   
+           
+    
+        
+    }
