@@ -49,20 +49,24 @@ nav{
             a:link {
                 text-decoration: none;
                 color:$colorPrincipal;
+                font-weight: 800;
                 }
         a:visited {
                 text-decoration: none;
                 color:$colorPrincipal;
+                font-weight: 800;
                 
                 }
         a:hover {
                     text-decoration: none;
                  color:$tercerColor;
+                 font-weight: 800;
                 
                 }
         a:active {
                 text-decoration: none;
-                color: $colorPrincipal;                 
+                color: $colorPrincipal;      
+                font-weight: 800;           
                 }
         }
         

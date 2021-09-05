@@ -3,6 +3,7 @@
     margin:0; padding:0;
     position:relative;
     
+    
     .logoIndex { text-transform: uppercase; 
     
     h1{
@@ -28,7 +29,95 @@ a:active {
     color:$colorPrincipal;
     
     }
-}
+
+  
+    
+    }
+
+   .mainIndex{
+       height: 1500px;
+    .infoContainer3{
+        height: 500px;
+        background-color: black;
+        box-shadow: #333;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        transition: all 4s;
+        margin: 10px;
+        color:white;
+        border-radius: 6px;
+        box-shadow: 10px 5px 2px 0px $tercerColor;
+        /*-webkit-box-shadow: 20px 10px 5px 0px $tercerColor;
+        -moz-box-shadow: 20px 10px 5px 0px $tercerColor;*/  
+        div{
+            div{height: 400px;
+                width: 800px;
+                img{
+                    padding-left: 60px;
+                    padding:20px;
+                    height: 500px;
+                    width: 500px;
+                }
+            }
+        }
+
+
+        .btn {
+            background:$tercerColor;
+            color: white;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: 0;
+            color: #fffffe;
+            padding:20px;
+            margin:30px;
+            
+        }
+
+        h3{
+            color: $tercerColor;
+        }
+
+        p{
+            color:#bac3e4; text-align: center; 
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            word-spacing: 5px;
+            padding: 10px;
+            text-justify: auto;
+            }
+
+        div{
+            .descripcionIntro{
+                color:#bac3e4; text-align: center; 
+                font-family: 'Lobster';
+                font-size: 30px;
+                font-style: normal;
+                word-spacing: 5px;
+                padding: 30px;
+                padding: 30px;
+                text-justify: auto;
+                vertical-align: middle;
+
+            }    
+
+        }
+
+      /*  #carouselExampleControls{
+            
+                    img{
+                        width: 90%;
+                        height: 40vh;
+                    }
+                
+            
+        }*/
+    }
+        
+   } 
 
 
 }
