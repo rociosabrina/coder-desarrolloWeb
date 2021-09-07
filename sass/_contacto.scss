@@ -1,15 +1,26 @@
 .contacto_f{
     margin: 0 auto;
+    margin-bottom: 0%;
     max-width: 1024px;
     width: 90%;
-    padding-bottom: 40px;
-
+    padding-bottom: 0px;
+    height: 1000px;
+    @include small{
+        display: flex;
+        flex-direction: column;
+    }
+  
 
     #titulo{
         margin: 0;
         padding: 0;
         list-style: none;
         display: block;
+        @include small{
+            display: flex;
+            flex-direction: column;
+        }
+
       
         h1{
             background-color:$tercerColor;
@@ -24,6 +35,12 @@
             border: 1px solid white;
             padding: 10px;
             display: block;
+            @include small{
+                font-size: 15px;
+                margin: 20px;
+                padding: 20px;
+                text-align: center;
+            };
         }
         p{
             color: white; text-align: center; 
@@ -40,17 +57,15 @@
                 margin-block-end: 1em;
                 margin-inline-start: 0px;
                 margin-inline-end: 0px;
-            
+                @include small{
+                    height:250px;
+                    font-size: 10px;
+                    margin: 20px;
+                    padding: 20px;
+                };
         }
         
     
-       /* margin-left: 400px;
-        width:400px;
-        height: 600px;
-        background-color: darkgrey; width : 300px;  
-        border: 3px solid black; padding: 30px; 
-        border-radius: 10px;*/
-
     }
 
     .contactoFla{
@@ -59,7 +74,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 100px auto;
-        padding: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0%;
         list-style: none;
         box-sizing: border-box;
         background-color: $tercerColor;
@@ -67,6 +83,12 @@
         box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
         -webkit-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);    
+        @include small{
+            font-size: 10px;
+            margin-top:150px;
+            padding: 20px;
+            width:350px;
+        };
         .contenedor{
             display: block;
             width: 350px;
@@ -79,12 +101,15 @@
             position: relative;
             box-sizing: border-box;
             display: block;
+            @include small{
+             width:300px;           
+            }
 
             .card{
                 top: 50%;
                 left: 50%;
-                width: 400px;
-                height: 450px;
+                width: 500px;
+                height: 550px;
                 border-radius: 16px;
                 overflow: hidden;
                 transition: 0.5s;
@@ -92,13 +117,14 @@
                 background:transparent;
                 transform: translate(-50%, -50%);
                 position: relative;
-                /*display: flex;
-                flex-direction: column;
-                min-width: 0;
-                word-wrap: break-word;
-                background-color: #fff;
-                background-clip: border-box;
-                border: 1px solid rgba(0,0,0,.125);*/
+                @include small{
+                    width: 280px;
+                    height: 500px;
+                    margin-left: -10%;
+                    padding:0%;
+                        
+                }
+
                 
                 .cardImagen{
                     
@@ -109,7 +135,7 @@
                     height: 90%;
                     z-index: 0;
                     display: block;
-                   
+                                  
                     
                    
                     
@@ -118,12 +144,18 @@
                         transition: .5s;
                         vertical-align: middle;
                         margin: auto;
+                        @include small{
+                            width:270px;
+                            height: 350px;
+                            margin-left: 30px;
+                           
+                        }
                     }
                 }
 
                 .enlaces{
                     margin: 0px auto 9px auto;
-                    height: 50px;
+                    height: 80px;
                     width: 200px;
                     padding:0px;
                     word-wrap: break-word;
@@ -133,15 +165,12 @@
                         list-style-type: disc;
                         margin-top: 0px;
                         margin-bottom: 0px;
-                        /*margin-block-start: 1em;
-                        margin-block-end: 1em;
-                        margin-inline-start: 0px;
-                        margin-inline-end: 0px;
-                        padding-inline-start: 5px;*/
+                       
 
                         li{
                             display: inline-block;
                             text-align: -webkit-match-parent;
+                            padding: 5px;
 
                             a{
                                 color:black;
@@ -192,8 +221,7 @@
                 padding-right:0.5rem;
                 padding-left: 0.5rem;
                 margin-top: 1rem;
-                /*display: block;
-                margin-top: 0em;*/
+
     
                 .col-md-6{
                     flex: 0 0 auto;
@@ -239,15 +267,6 @@
                         resize: vertical;
                         width: 80%;
                         height: 80px;
-                       /* text-rendering: auto;
-                        color: -internal-light-dark(black, white);
-                        letter-spacing: normal;
-                        word-spacing: normal;
-                        text-transform: none;
-                        appearance: auto;
-                          -webkit-rtl-ordering: logical;
-                           white-space: pre-wrap;
-                            border-image: initial;*/
                         text-indent: 20px;
                         display: inline-block;
                         text-align:left;
@@ -319,49 +338,5 @@
             }
         }
 
-        
-
-    /*.contactoFla{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 57px auto;
-        background-color: black;
-
-        h3{
-            color:$tercerColor;
-            font-weight: 900;
-            display: inline-block;
-            font-style: normal;
-            font-variant: normal;
-            text-rendering: auto;
-            line-height: 1;
-            
-        }
-
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: -1rem;
-            margin-right: -0.5rem;
-            margin-left: -0.5rem;
-            flex-shrink: 0;
-            width: 100%;
-            max-width: 100%;
-            padding-right:0.5rem;
-            padding-left: 0.5rem;
-            margin-top: 1rem;
-
-            .col-md-6{
-                flex: 0 0 auto;
-                width: 50%;
-            }
-        
-        
-        }
-
-
-    }        */    
     }
 }

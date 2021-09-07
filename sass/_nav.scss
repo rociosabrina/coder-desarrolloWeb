@@ -2,23 +2,29 @@ nav{
     display: inline;
     text-align: center;
     list-style: none;
+  
     
     ul{
         @include flex(flex,row,space-evenly,flex-start);
-        height: $alto/10;
+        height: 50px;
+        margin-bottom: 2%;
+        @include small {
+                justify-content:flex-start;
+                flex-direction: row;
+                margin:0%;
+                height: fit-content;  }
+                        
 
         li {
             @extend %fontStyle;
-              
-            #menuTop__submenu{
-                position:absolute;
-                display: none;
-                width:min-content;
-                height:min-content;
-                overflow:visible;
-                font-size: $tamLetraPpal/2;
-                text-align: left;
-            }
+            @include small {
+                width:auto;
+                font-size: 10px;
+                padding:10px;
+                      
+               }
+          
+        
               
             &:link {
                     text-decoration: none;
@@ -74,4 +80,4 @@ nav{
 
     }
 
-}
+    }

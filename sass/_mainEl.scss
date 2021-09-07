@@ -1,12 +1,10 @@
 main{
     margin: 0px;
     margin-top:0px; margin-bottom:0;
-    height: 1000px;
-
-    /*.linea3{
-        background-color: $tercerColor;
-    }
-   */
+    height: 1300px;
+    padding-bottom: 16px;
+     
+   
     .portada__guitar{
         width:100%; 
                        
@@ -25,6 +23,14 @@ main{
            }    
         }
 
+        @include small {
+            width: 100%;
+            height: 60%;
+        
+           
+          }
+       
+
         .infoContainer{
             background-color: black;
             box-shadow: #333;
@@ -40,7 +46,31 @@ main{
             img{
                 width:30vw;
                 height: 90vh;
-            }
+                }
+
+            @include small {
+               
+                display: flex;
+                flex-direction: column;
+                margin:0px;
+                padding:0px;
+                height: 600px;
+                background-color: transparent;
+                          
+                align-items: flex-start;
+                img{width:60vw;
+                    height: 60vh;
+                    margin-left: 70px;
+
+                }
+                p{
+                    font-size: 10px;
+                    text-align: justify;
+                    margin-left:0px;
+                    padding:0%;
+                    width: 300px;
+                  
+                }}
 
             .btn {
                 background:$tercerColor;
@@ -76,22 +106,6 @@ main{
         padding:$padding;
         }
 
-    .box1{
-        width: 90%;
-        height: $alto/1.8;
-        border-radius: 10px;
-        padding: 30px;;
-        margin-left: 60px;
-        background-color: white;
-        box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 20px 10px 5px 0px rgba(0,0,0,0.75);    
-            .datos{
-                margin: 10px;
-                @extend %fontStyle;
-                @extend %formatText;
-            }
-          }    
 
     #titulo{
         width: 100%;
@@ -112,96 +126,6 @@ main{
         padding: $padding;
     }
 
-    .grid{
-      
-        @include grid(grid, 25vw 25vw 25vw 25vw,30vh 30vh 30vh 30vh,$gap*0.75,$gap*5);
-        @extend %formatGrid;
-    
-    
-        .imagen1{
-            grid-area: imagen1;
-            background-image: url("../Imagenes/fla1.jpg");
-            @extend %imgGrid;
-            }    
-        
-        
-        .imagen2{
-            grid-area: imagen2;
-            background-image: url("../Imagenes/fla2.jpg");
-            @extend %imgGrid;
-        } 
-        
-        .imagen3{
-            grid-area: imagen3;
-            background-image: url("../Imagenes/fla3.jpg");
-            @extend %imgGrid;
-        } 
-        
-        .imagen4{
-            grid-area: imagen4;
-            background-image: url("../Imagenes/fla4.jpg");
-            @extend %imgGrid;
-        } 
-        
-        .imagen5{
-            grid-area: imagen5;
-            background-image: url("../Imagenes/fla5.jpg");
-            @extend %imgGrid;
-        } 
-
-        }   
-           
-    /*.section_container{
-        .container{
-            height: 700px;
-            width: 80%;
-            margin:30px;
-            .row{
-                .col{
-                    #carouselExampleSlidesOnly{
-                        div{
-                            height: 700px;
-                            width: 700px;
-                            img{
-                                height: auto;
-                                width: auto;
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-    }*/
-    .carouselFla{
-       height: 600px;
-        width: 100%;
-        background-color:$tercerColor;
-       
-        
-        #carouselExampleControls{
-           justify-self: left;
-            height: 400px;
-            width: 400px;
-            padding:20px;
-            margin-left: auto; margin-right: auto;
-            border-radius: 2px;
-            div{
-                div{height: 500px;
-                    width: 500px;
-                    img{
-                        padding-left: 60px;
-                        padding:20px;
-                        height: 500px;
-                        width: 500px;
-                    }
-                }
-            }
-    
-        }
-
-    }
 
     .infoContainer4{
         background-color: $tercerColor;
@@ -215,6 +139,27 @@ main{
         color:white;
         border-radius: 6px;
         height: 700px;
+        @include small {
+               
+            display: flex;
+            flex-direction: column;
+            margin:0px;
+            padding: 0%;
+            height: 700px;
+            
+            align-items: flex-start;
+            div{
+                height: 200px;
+            }
+            .mapaUb{
+                iframe{
+                    width:300px;
+                    height: 300px;
+                    margin-left:30px;
+                }
+            }    
+           
+        }
 
         h2{
             color:$colorPrincipal; 
@@ -226,6 +171,10 @@ main{
             word-spacing: 20px;
             padding: 30px;
             margin-left: 50px;
+            @include small{
+                font-size: 20px;
+                text-align: center;
+            }
         
         }
     }

@@ -2,6 +2,10 @@
     margin:0;
     height: 1200px;
     width: 100%;
+    @include small{
+        height: 3000px;
+        width:100%;
+    }
        
         .tituloSecundario{
         height:60px;
@@ -16,9 +20,9 @@
             height: 992px;
             display: grid;
             margin: auto;
+            margin-left:0px;
             grid-template-columns: repeat(4, 24%);
             grid-template-rows: repeat(3, 300px);
-            /*gap: 1px 1px;*/
             grid-column-gap:10px;
             grid-row-gap:40px ;
             text-align: center;
@@ -30,12 +34,40 @@
             "cuadroCinco cuadroSeis cuadroSiete cuadroCuatro"
             "bannerUno bannerUno bannerUno bannerUno";
 
+            @include small{
+                height: 2000px;
+            display: grid;
+            margin: auto;
+            grid-template-columns: repeat(1, 50%);
+            grid-template-rows: repeat(7, 400px);
+            grid-row-gap:0px ;
+            text-align: center;
+            justify-content: stretch;
+
+            grid-template-areas:
+            "cuadroDos"
+            "cuadroTres"
+            "cuadroCuatro"
+            "cuadroCinco"
+            "cuadroSeis"
+            "cuadroSiete"
+            "bannerUno";
+             
+            }
+
             .bannerUno{
                 grid-area: bannerUno;
                 background-color: #EFF4F7;
                 display: block;
-                height: 300px;
+                height: 500px;
                 border-radius: 10px;
+                
+                @include small{
+                    height: 600px;
+                    width: 300px;
+                    margin-left:0px;
+                   }
+
                 .com1{
                     margin:20px;
                     font-size: 1rem;
@@ -45,6 +77,10 @@
                     text-align: left;
                     animation-duration: 3s;
                     animation-name: slidein;
+
+                    @include small{
+                        font-size: 10px;
+                    }
                     }
                       
                       @keyframes slidein {
@@ -67,16 +103,15 @@
                     text-align: right;
                     animation-duration: 3s;
                     animation-name: slidein2;
+                    @include small{
+                        font-size: 10px;
+                    }
                 }
                 @keyframes slidein2 {
                     from {margin-left:0%;
-                        /*margin-right: 100%;
-                        width: 300%;*/
-                      }
+                                         }
                     to {margin-right:0%;
-                     /* margin-right: 0%;
-                      width: 100%*/
-                    }
+                                      }
                   
                     
                   }
@@ -92,6 +127,14 @@
                 padding:0px;
                 margin:0px;
                 border-radius: 10px;
+                @include small{
+                    height: 300px;
+                    width: 300px;
+                    img{width:250px;
+                        height: 250px;
+
+                    }}
+               
                 p{
                     margin:0px;
                     font-size: 1rem;
@@ -113,12 +156,22 @@
                 padding:0px;
                 margin:0px;
                 border-radius: 10px;
+                @include small{
+                    height: 300px;
+                    width: 300px;
+                    img{width:280px;
+                        height: 250px;
+
+                    }}
                 p{
                     margin:0px;
                     font-size: 1rem;
                     font-weight: 500;
                     text-shadow:$tercerColor 1px 0px;
                     font-family: 'Lobster';
+                    @include small{
+                        font-size:15px;
+                    }
                 }
             }
             .cuadroDos:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
@@ -129,17 +182,27 @@
                 background-color:$tercerColor;
                 border: 5px solid $colorPrincipal;
                 display: block;
-                height: 676px;
+                height: 500px;
                 padding:0px;
                 margin:0px;
                 border-radius: 10px;
-                
+                @include small{
+                    height: 400px;
+                    width: 300px;
+                    margin-bottom: 100px;
+                    img{width:250px;
+                        height: 350px;
+
+                    }}
                 p{
                     margin:0px;
                     font-size: 1rem;
                     font-weight: 500;
                     text-shadow:$tercerColor 1px 0px;
                     font-family: 'Lobster';
+                    @include small{
+                        font-size:15px;
+                    }
                 }
             }
             .cuadroCuatro:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
@@ -154,12 +217,23 @@
                 padding:0px;
                 margin:0px;
                 border-radius: 10px;
+                @include small{
+                    height: 300px;
+                    width: 300px;
+                    margin-top: 50px;
+                    img{width:240px;
+                        height: 250px;
+
+                    }}
                 p{
                     margin:0px;
                     font-size: 1rem;
                     font-weight: 500;
                     text-shadow:$tercerColor 1px 0px;
                     font-family: 'Lobster';
+                    @include small{
+                        font-size:15px;
+                    }
                 }
              }
             .cuadroCinco:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
@@ -174,12 +248,22 @@
                 padding:0px;
                 margin:0px;
                 border-radius: 10px;
+                @include small{
+                    height: 300px;
+                    width: 300px;
+                    img{width:250px;
+                        height: 250px;
+
+                    }}
                 p{
                     margin:0px;
                     font-size: 1rem;
                     font-weight: 500;
                     text-shadow:$tercerColor 1px 0px;
                     font-family: 'Lobster';
+                    @include small{
+                        font-size:15px;
+                    }
                 }
              }
             .cuadroSeis:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
@@ -194,63 +278,31 @@
                 padding:0px;
                 margin:0px;
                 border-radius: 10px;
+                @include small{
+                    height: 300px;
+                    width: 300px;
+                    img{width:250px;
+                        height: 250px;
+
+                    }}
                 p{
                     margin:0px;
                     font-size: 1rem;
                     font-weight: 500;
                     text-shadow:$tercerColor 1px 0px;
                     font-family: 'Lobster';
+                    @include small{
+                        font-size:15px;
+                    }
                 }
              }
             .cuadroSiete:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
             .cuadroSiete {overflow:hidden;}   
+
+           
              
                                     
                     
         }
-
-    /*    
-    .opinionesGrid{
-            height:200px;
-            width: 100%;
-            background-image: url("../Imagenes/opinando.jpg");
-            background-size: contain;
-            background-repeat: repeat;
-            margin-right:0%;
-            }
-
-    .comentarios{
-        height:500px;
-        width: 100%;
-        padding: $padding;
-        margin-bottom: 30px;
-        
-        
-        .boxOpinion{
-            width: 95%;
-            height: 35vh;
-            border-radius: 10px;
-            padding: 30px;;
-            background-color: white;
-            box-shadow: -13px 21px 5px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: -13px 21px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: -13px 21px 5px 0px rgba(0,0,0,0.75);
-            .opinion{
-                background: #ccc;
-                background: linear-gradient(to right, $segundoColor ,$colorPrincipal);
-                -webkit-text-fill-color: transparent;
-                -webkit-background-clip: text;
-                text-align:right; 
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                line-height: 55px;
-                list-style-type: none;
-            }
-
-        }
-             
-      
-
-    }        */
 
 }

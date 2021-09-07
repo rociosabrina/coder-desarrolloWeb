@@ -47,20 +47,3 @@
     margin: $margin;
     border: 3px ;
 }
-
-%formatGrid{
-    height: 1000px; 
-    margin: $margin;
-    padding: $padding*1.5;
-    background-color:$tercerColor;
-    grid-template-areas:
-    "imagen1 imagen2 videoFla videoFla"
-    "imagen4 imagen5 videoFla videoFla";
-}
-
-%imgGrid{
-    background-position: center;
-    background-size: cover;
-    padding: $padding;
-    border-radius: 10px;
-}

@@ -14,3 +14,12 @@
     grid-row-gap: $gapRow;
 
 }
+
+// Responsive mixin
+
+@mixin small {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  
